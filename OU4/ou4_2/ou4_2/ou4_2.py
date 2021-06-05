@@ -24,9 +24,9 @@ def main():
 def timetaking(lower_bound, upper_bound):
 	data = []
 	for x in range(lower_bound, upper_bound):
-		start = perf_counter()
+		mystart = perf_counter()
 		fib_py(x)
-		end = perf_counter
+		myend = perf_counter
 
 		f = Heltal(x)
 
@@ -34,7 +34,7 @@ def timetaking(lower_bound, upper_bound):
 		fib_c(f)
 		newend = perf_counter()
 
-		data.append((x, round(end - start, 2), round(newend - newstart, 2)))
+		data.append((x, round(myend - mystart, 2), round(newend - newstart, 2)))
 	plt.scatter(data[0], data[1], c="b", label="Only Python")
 	plt.scatter(data[0], data[2], c="r", label="Running in c++")
 	plt.legend(loc="upper left")
