@@ -35,8 +35,8 @@ def timetaking(lower_bound, upper_bound):
 		newend = perf_counter()
 
 		data.append((x, round(myend - mystart, 2), round(newend - newstart, 2)))
-	plt.scatter(data[0], data[1], c="b", label="Only Python")
-	plt.scatter(data[0], data[2], c="r", label="Running in c++")
+	plt.scatter([data[i][0] for i in range(len(data))], [data[i][1] for i in range(len(data))], c="b", label="Only Python")
+	plt.scatter([data[i][0] for i in range(len(data))], [data[i][2] for i in range(len(data))], c="r", label="Running in c++")
 	plt.legend(loc="upper left")
 	plt.savefig("Fib_times.png")
 
