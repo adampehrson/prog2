@@ -24,7 +24,7 @@ class Heltal(object):
 		lib.Heltal_set(self.obj, val)
 
 	#Bridging code between python and c++.
-	def fib(self):
+	def getfib(self):
 		lib.Heltal_fib(self.obj)
         
 	def __del__(self):

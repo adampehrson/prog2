@@ -18,9 +18,9 @@ def fib_py(n):
 
 def fib_c(n):
 	f = Heltal(n)
-	print(f.getfib())
+	return f.getfib()
 
 if __name__ == '__main__':
-	fib_py(10)
+	print(fib_py(10))
 
-	fib_c(10)
+	print(fib_c(10))
