@@ -21,6 +21,6 @@ def fib_c(f):
 
 if __name__ == '__main__':
 	print(fib_py(10))
-	
+
 	f = Heltal(10)
 	print(fib_c(f))
