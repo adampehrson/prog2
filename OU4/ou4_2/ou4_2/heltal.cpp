@@ -7,14 +7,26 @@ class Heltal{
 		int get();
 		void set(int);
 		int getfib();
-		int fibcalc(int);
 		
 	private:
 		int val;
+		int fibcalc(int);
+
+
+	int Heltal::fibcalc(int n){
+	if(n<=1){
+		return n;
+	}
+
+	else{
+		return Heltal::fibcalc(n - 1) + Heltal::fibcalc(n - 2);
+	}
+}
 	};
  
 Heltal::Heltal(int n){
 	val = n;
+	
 	}
  
 int Heltal::get(){
@@ -32,15 +44,7 @@ void Heltal::set(int n){
 
 // Method for calculating fibonacci series for a value in heltal.
 
-int Heltal::fibcalc(int n){
-	if(n<=1){
-		return n;
-	}
 
-	else{
-		return Heltal::fibcalc(n - 1) + Heltal::fibcalc(n - 2);
-	}
-}
 
 
 

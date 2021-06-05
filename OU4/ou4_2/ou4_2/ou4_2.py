@@ -10,6 +10,8 @@ def main():
 	print(f.get())
 
 
+
+
 def fib_py(n):
 	if n <= 1:
 		return n
