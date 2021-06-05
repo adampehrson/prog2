@@ -32,13 +32,13 @@ void Heltal::set(int n){
 
 // Method for calculating fibonacci series for a value in heltal.
 
-int Heltal::fibcalc(int){
-	if(Heltal::get()<=1){
-		return Heltal::get();
+int Heltal::fibcalc(int n){
+	if(n<=1){
+		return n;
 	}
 
 	else{
-		return Heltal::fibcalc(Heltal::get() - 1) + Heltal::fibcalc(Heltal::get() - 2);
+		return Heltal::fibcalc(n - 1) + Heltal::fibcalc(n - 2);
 	}
 }
 
