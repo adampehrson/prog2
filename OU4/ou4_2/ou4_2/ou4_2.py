@@ -19,7 +19,7 @@ def fib_py(n):
 		return fib_py(n-1) + fib_py(n-2)
 
 def fib_c(f):
-	return f.getfib()
+	return f.fib()
 
 if __name__ == '__main__':
 	print(fib_py(10))

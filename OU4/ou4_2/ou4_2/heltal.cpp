@@ -6,7 +6,7 @@ class Heltal{
 		Heltal(int);
 		int get();
 		void set(int);
-		int getfib();
+		int fib();
 		
 	private:
 		int val;
@@ -22,7 +22,7 @@ int Heltal::get(){
 	return val;
 	}
 
-int Heltal::getfib(){
+int Heltal::fib(){
 	return fibcalc(Heltal::get());
 }
  
@@ -51,7 +51,7 @@ extern "C"{
 	int Heltal_get(Heltal* heltal) {return heltal->get();}
 
 	//Bridging code between python and c++
-	int Heltal_getfib(Heltal* heltal) {return heltal->getfib();}
+	int Heltal_fib(Heltal* heltal) {return heltal->fib();}
 	
 	void Heltal_set(Heltal* heltal, int n) {heltal->set(n);}
 	void Heltal_delete(Heltal* heltal){
