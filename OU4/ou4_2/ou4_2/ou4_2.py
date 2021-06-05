@@ -23,7 +23,7 @@ def fib_c(f):
 	return f.fib()
 
 if __name__ == '__main__':
-	value = 10
+	value = 35
 
 
 	start_fib_py = perf_counter()
