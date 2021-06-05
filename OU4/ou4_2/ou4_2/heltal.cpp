@@ -7,15 +7,14 @@ class Heltal{
 		int get();
 		void set(int);
 		int getfib();
-		int fibcalc(int);
+		
 	private:
 		int val;
-		int fibnr;
+		int fibcalc(int);
 	};
  
 Heltal::Heltal(int n){
 	val = n;
-	fibnr = fibcalc(n);
 	}
  
 int Heltal::get(){
@@ -23,7 +22,7 @@ int Heltal::get(){
 	}
 
 int Heltal::getfib(){
-	return fibnr;
+	return fibcalc(Heltal::get());
 }
  
 void Heltal::set(int n){
