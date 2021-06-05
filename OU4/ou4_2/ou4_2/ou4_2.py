@@ -26,7 +26,7 @@ def timetaking(lower_bound, upper_bound):
 	for x in range(lower_bound, upper_bound):
 		mystart = perf_counter()
 		fib_py(x)
-		myend = perf_counter
+		myend = perf_counter()
 
 		f = Heltal(x)
 
