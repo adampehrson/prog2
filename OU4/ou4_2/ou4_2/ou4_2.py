@@ -29,12 +29,12 @@ if __name__ == '__main__':
 	start_fib_py = perf_counter()
 	print(fib_py(value))
 	end_fib_py = perf_counter()
-	print(f"Python process took {round(start_fib_py - end_fib_py, 2)} seconds")
+	print(f"Python process took {round(end_fib_py - start_fib_py, 2)} seconds")
 
 	f = Heltal(value)
 
 	start_fib_c = perf_counter()
 	print(f.fib())
 	end_fib_c = perf_counter()
-	print(f"c++ process took {round(start_fib_c - end_fib_c, 2)} seconds")
+	print(f"c++ process took {round(end_fib_c - start_fib_c, 2)} seconds")
 
