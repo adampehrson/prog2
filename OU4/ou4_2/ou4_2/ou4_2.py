@@ -57,4 +57,4 @@ def fib_c(f):
 if __name__ == '__main__':
 	#main()
 
-	timetaking(10,33)
+	timetaking(30,45)
