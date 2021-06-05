@@ -21,13 +21,17 @@ Heltal::Heltal(int n){
 int Heltal::get(){
 	return val;
 	}
+
+int Heltal::getfib(){
+	return fibnr;
+}
  
 void Heltal::set(int n){
 	val = n;
 	}
 	
 
-// Methods for calculating fibonacci series for a value in heltal.
+// Method for calculating fibonacci series for a value in heltal.
 
 int Heltal::fibcalc(int){
 	if(Heltal::get()<=1){
@@ -39,9 +43,7 @@ int Heltal::fibcalc(int){
 	}
 }
 
-int Heltal::getfib(){
-	return fibnr;
-}
+
 
 
 extern "C"{
@@ -49,7 +51,7 @@ extern "C"{
 	int Heltal_get(Heltal* heltal) {return heltal->get();}
 
 	//Bridging code between python and c++
-	int Heltal_fib(Heltal* heltal) {return heltal->getfib();}
+	int Heltal_getfib(Heltal* heltal) {return heltal->getfib();}
 	
 	void Heltal_set(Heltal* heltal, int n) {heltal->set(n);}
 	void Heltal_delete(Heltal* heltal){

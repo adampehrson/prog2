@@ -16,11 +16,11 @@ def fib_py(n):
 	else:
 		return fib_py(n-1) + fib_py(n-2)
 
-def fib_c(n):
-	f = Heltal(n)
+def fib_c(f):
 	return f.getfib()
 
 if __name__ == '__main__':
 	print(fib_py(10))
-
-	print(fib_c(10))
+	
+	f = Heltal(10)
+	print(fib_c(f))
